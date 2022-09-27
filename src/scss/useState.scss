@@ -53,6 +53,7 @@
     h2{
         border: 1px solid aqua;
         margin: 2px;
+        text-align: center
     }
     button{ 
         @include button();
@@ -77,7 +78,7 @@
     }
     p{
         color: black;
-        width: 60%;
+        width: 75%;
         text-align: center;
         padding: 1.5rem .4rem;
     }

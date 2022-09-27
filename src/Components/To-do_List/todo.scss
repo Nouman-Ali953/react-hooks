@@ -104,7 +104,22 @@
         margin-top: .6rem;
         color: white;
         transition: .3s ease-in-out;
+        p{
+            overflow:auto;
+            max-width: 20rem;
+            height: 2rem;
+            padding-top: .4rem;
+            ::-webkit-scrollbar{
+                width: .1px;
+              }
+              ::-webkit-scrollbar-track{
+                background-color: slategrey;
+              }
+              ::-webkit-scrollbar-thumb{
+                background-color:white;
+              }
 
+        }
         &:hover {
             cursor: pointer;
             background-color: white;
