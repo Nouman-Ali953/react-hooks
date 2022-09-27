@@ -1,0 +1,144 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@import '../../scss/useState.scss';
+
+.main-div {
+    @include display-list();
+    min-height: 100vh;
+    background-color: purple;
+
+    .image {
+        width: 5rem;
+        height: 5rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h4 {
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    .input {
+        position: relative;
+       
+
+        ::placeholder {
+            font-size: 1rem;
+            padding-left: .2rem;
+            font-weight: 100;
+        }
+            
+            svg {
+                
+                position: absolute;
+                right: .7rem;
+                top: .55rem;
+                font-size: 2.9rem;
+            color: white;
+            font-weight: bolder;
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    
+
+
+    svg {
+        font-size: 6rem;
+        padding: 1rem;
+        
+        &:hover {
+            color: lightgreen;
+        }
+        
+    
+}
+
+    #list {
+        border: none;
+        background-color: transparent;
+        width: 18rem;
+        padding: .4rem .99rem;
+        margin: 1rem;
+        box-shadow: .3px .5px 3px black;
+        outline: none;
+        font-size: 1.1rem;
+        font-weight: 100;
+        overflow-x: scroll;
+    }
+
+    button {
+        @include button();
+        margin: 1rem;
+        letter-spacing: 1px;
+        color: black;
+        font-size: .7rem;
+
+        &:hover {
+            color: white;
+            transform: rotateX(360deg);
+        }
+    }
+
+    .add-items {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: .2px .6px 2px white;
+        align-items: center;
+        min-width: 18rem;
+        height: 2rem;
+        padding: .1rem .3rem;
+        background-color: purple;
+        padding-left: 1rem;
+        border-radius: 5px;
+        margin-top: .6rem;
+        color: white;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+            background-color: white;
+            box-shadow: none;
+
+            p {
+                color: purple;
+                font-weight: 400;
+            }
+        }
+            #ed{
+                
+                margin-right: -1.4rem;
+                margin-top: .2rem;
+                color: gray;
+                &:hover{
+                    color: lightgreen;
+                }
+            }
+            svg {
+                font-size: 3rem;
+                transition: .2s ease-in-out;
+                color: black;
+                
+                &:hover {
+                    color: red;
+                }
+            }
+
+        p {
+            letter-spacing: .9px;
+            font-size: 1rem;
+            font-weight: 100;
+
+        }
+    }
+}

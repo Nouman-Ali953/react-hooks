@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+@mixin display-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@mixin button {
+    padding: 0.6rem 1rem;
+    background-color: aqua;
+    color: white;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border: 1px solid aqua;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid aqua;
+        cursor: pointer;
+    }
+}
+
+.main-useState {
+    @include display-list();
+    height: 40vh;
+    background-color: rgb(54, 99, 248);
+    
+    h1 {
+        margin: 1rem;
+        color: white;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    }
+    
+    button {
+        @include button();
+    }
+}
+
+.main-useState-array{
+    @include display-list();
+    background-color: rgb(54, 125, 248);
+    min-height: 40vh;
+    padding: 2rem;
+    h2{
+        border: 1px solid aqua;
+        margin: 2px;
+    }
+    button{ 
+        @include button();
+        margin-top: 1.3rem;
+     }
+
+}
+.MuiSvgIcon-root{
+    padding: 0%;
+    margin-bottom: -2.2px;
+    color: white;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.main-useState-Sce{
+    @include display-list();
+    min-height: 40vh;
+    background-color: rgb(0, 145, 255);
+    h2{
+        color: white;
+    }
+    p{
+        color: black;
+        width: 60%;
+        text-align: center;
+        padding: 1.5rem .4rem;
+    }
+
+}
+.main-useEffect{
+    @include display-list();
+    height: 40vh;
+    background-color: palevioletred;
+    h2{color: white;}
+    h1{ margin-top: 1.3rem; margin-bottom: .4rem;}
+    button{ @include button();}
+}
+.main-useEffect-cleanUp{
+    @include display-list();
+    background-color: rgb(252, 158, 174);
+    height: 40vh;
+    h2{color: white;}
+    h1{margin: 1.5rem;}
+    p{letter-spacing: 3px;}
+}
+
+.main-useRef{
+    @include display-list();
+    background-color: rgb(252, 158, 174);
+    height: 40vh;
+    h2{
+        color: white;
+        letter-spacing: 4px;
+    }
+    form{
+        @include display-list();
+        flex-direction: column;
+        input{
+            background-color: transparent;
+            margin: 1rem;
+            padding: .45rem .6rem;
+            outline: none;
+            width: 20rem;
+            border: none;
+            box-shadow: 1px .1px 2px rgb(38, 38, 38);
+        }
+        button{
+            @include button();
+            padding: .5rem .9rem;
+            letter-spacing: 1.2px;
+        }
+        
+    }
+    p{
+        color: white;
+        letter-spacing: 1px;
+        margin-top: 1rem;
+        span{
+            font-weight: bolder;
+        }
+    }
+}
