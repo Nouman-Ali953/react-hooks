@@ -105,7 +105,9 @@
         color: white;
         transition: .3s ease-in-out;
         p{
-            overflow:auto;
+            overflow-x:hidden;
+            overflow-y: auto;
+
             max-width: 20rem;
             height: 2rem;
             padding-top: .4rem;
