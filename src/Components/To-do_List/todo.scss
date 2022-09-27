@@ -108,13 +108,13 @@
             overflow-x:hidden;
             overflow-y: auto;
 
-            max-width: 20rem;
+            max-width: 14rem;
             height: 2rem;
             padding-top: .4rem;
             ::-webkit-scrollbar{
                 width: .1px;
               }
-              ::-webkit-scrollbar-track{
+              ::-webkit-scollbar-track{
                 background-color: slategrey;
               }
               ::-webkit-scrollbar-thumb{
